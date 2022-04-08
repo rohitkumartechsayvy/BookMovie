@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="mastMovieApp">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Book Movie</title>
+  <script type="text/javascript" src="/build/bundle.js"></script>
+  <script type="text/javascript" src="js/angular-filter.min.js"></script>
+  <link rel="stylesheet" href="css/pay.css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="css/mycss.css" media="screen" title="no title" charset="utf-8"> -->
+  <!-- <script type="text/javascript" src="js/loginscript.js">
+
+  </script>-->
+    <!-- <link rel="stylesheet" href="css/omdb.css" media="screen" title="no title" charset="utf-8"> -->
+<link rel="stylesheet" href="css/mycss.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container" style="padding-top: 10px;">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default navbar-inverse " role="navigation">
+            <div class="navbar-header">
+
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#/">Book Movie</a>
+                    </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#/">Home</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/results?search_query=trailer+and+teaser" target="_blank">Trailer and video</a>
+                </li>
+
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input class="form-control" type="text" />
+                </div>
+                <button type="submit" class="btn btn-danger">
+                   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                  <!-- <li>
+                    <a href="#/admin">Admin</a>
+                  </li> -->
+                <li class="dropdown">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">Admin<strong class="caret"></strong></a>
+                  <ul class="dropdown-menu">
+
+                    <li>
+                      <a href="/#/insertOMDB">Add Movie</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                      <a href="/#/Theater">Add Theater</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                      <a href="/#/MovieTheaterMap">Map Movie</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">Login<strong class="caret"></strong></a>
+                  <ul class="dropdown-menu">
+
+                    <li>
+                      <a href="">New User ?</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                      <a href="">Sign In</a>
+
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+
+    <div ng-view>
+
+        </div>
+        <br><br><br>
+              <div class="row">
+                <footer>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                  <p>  <h3><font color="white"> Find us at:</font></h3>
+                       <a href="#/"> <img src="images/fb.png" alt="" class="img-circle" height="30px" width="30px" />          </a> &nbsp;&nbsp;&nbsp;
+                         <a href="#/"><img src="images/twitter.jpg" class="img-circle" alt="" height="33px" width="30px" />    </a>&nbsp;&nbsp;&nbsp;
+                      <a href="#/"> <img src="images/insta.jpg" alt="" class="img-circle" height="34px" width="30px" />    </a></p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <br><br><br><br>
+            <h5><img src="images/cr.png" alt="" class="img-circle" style=" border: 2px solid; border-radius: 25px;" height="15px" width="15px" />Copyright 2016</h5>
+                  </div>
+            </div>
+                </footer>
+
+              </div>
+
+      </div>  </body>
+</html>

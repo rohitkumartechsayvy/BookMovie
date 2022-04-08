@@ -1,0 +1,54 @@
+<style>
+.table > thead > tr > th {
+     vertical-align: middle;
+     text-align: center;
+}
+.table > tbody > tr > td {
+     vertical-align: middle;
+     text-align: center;
+}
+
+</style>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-4 col-lg-4">
+
+    </div>
+    <div class="col-sm-4 col-lg-4">
+
+  <center><label for="T_Name">Theater Name</label></center>
+  <input class="form-control" placehloder="Enter theater name " id="tname" type="text" ng-model="post.T_Name">
+<center>  <label for="T_City">Theater City</label></center>
+  <input class="form-control" placeholder="Enter Theater City" id="T_City" type="text" ng-model="post.T_City">
+<center>  <label for="T_Area">Theater Area</label></center>
+  <input class="form-control" placeholder="Enter theater area" id="T_Area" type="text" ng-model="post.T_Area">
+  <label></label>
+  <button type="button" class="btn btn-danger btn-block" ng-click="insertTheater()">Add Theater</button>
+    </div>
+    <div class="col-sm-4 col-lg-4">
+
+    </div>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Theater Name</th>
+      <th>Theater City</th>
+      <th>Theater Area</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="p in postData">
+      <td>{{p.T_Name}}</td>
+      <td>{{p.T_City}}</td>
+      <td>{{p.T_Area}}</td>
+      <td><button ng-click="deletetheater(p)" class="glyphicon glyphicon-trash btn btn-danger"></button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
